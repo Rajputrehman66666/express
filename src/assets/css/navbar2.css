@@ -1,0 +1,131 @@
+.navbar2 {
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid rgb(230, 219, 219);
+  display: flex;
+  flex-direction: row;
+}
+.image1 {
+  width: 150px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+#dropdown-basic {
+  color: black;
+  background-color: white;
+  border: none;
+}
+/* src/Dropdown.css */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dropdown-content66 {
+  display: block;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 200px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.dropdown-content66 h3 {
+  margin-top: 0;
+}
+
+.dropdown-content66 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-content66 ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content66 ul li:last-child {
+  border-bottom: none;
+}
+.written {
+  font-size: small;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(117, 103, 103);
+  margin-top: 20px;
+}
+.dropdownrrr {
+  margin-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 5px;
+  width: 700px;
+  margin-top: 12px;
+  height: 48px;
+  margin-left: 30px;
+}
+.input {
+  margin-left: 10px;
+}
+.icon3 {
+  margin-left: 6px;
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.dropdown22 {
+  margin-right: 10px;
+  padding: 5px;
+
+  outline: none;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+.button56{
+    height: 48px;
+    border: none;
+    width: 180px;
+    color: white;
+    background-color: #1877F2;
+    border-radius: 50px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.button66{
+    border: none;
+    background-color: white;
+    font-size: smaller;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+.button66:hover{
+    color: #1877F2;
+}
+
+
+
+
+

@@ -1,0 +1,106 @@
+.rounded {
+  width: 100%;
+  height: 310px;
+}
+
+.round {
+  margin-top: 30px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+.rounded h4 {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.round1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+.round1 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+.luxury1 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 65px;
+  margin-top: 20px;
+}
+.luxury1 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}
+.write {
+  display: flex;
+  flex-direction: row;
+}
+.luxury2 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+.luxury2 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}
+.luxury3 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+.luxury3 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}
+.luxury4 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+.luxury4 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}
+.luxury5 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 96px;
+  margin-top: 20px;
+}
+.luxury5 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}
+.luxury6 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.luxury6 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}
+.luxury7 h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-left: 107px;
+  margin-top: 20px;
+}
+.luxury7 h3:hover {
+  line-height: 1.25rem;
+
+  text-decoration: underline;
+}

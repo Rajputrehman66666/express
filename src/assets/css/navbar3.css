@@ -1,0 +1,22 @@
+.navbar3{
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 219, 219);
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.anchor a{
+    text-decoration: none;
+    color: black;
+    height: 32px;
+    padding: 6px;
+}
+.anchor a:hover{
+    text-decoration: underline;
+    color: rgb(72, 72, 184);
+    border-left: 1px solid  rgb(120, 115, 115);
+    border-right: 1px solid rgb(120, 115, 115);
+}
