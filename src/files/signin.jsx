@@ -104,11 +104,14 @@ const Signin = () => {
           <div className="apple"> Continue with Apple</div>
         </button>
       </div>
-      <div className="last">
-        <input type="checkbox" style={{marginRight:"5px"}} />
-        <div>Stay signed in</div>
+      <div className="last5">
         <div>
-         <img src={svg} style={{width:"14px",height:"14px",marginLeft:"5px"}} />
+        <input className="ass" type="checkbox" />
+        </div>
+       
+        <div style={{marginTop:'5px'}}>Stay signed in</div>
+        <div>
+         <img src={svg} style={{width:"14px",height:"14px",marginLeft:"5px",marginTop:'7px'}} />
         </div>
       </div>
       <hr/>

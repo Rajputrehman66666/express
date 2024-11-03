@@ -14,10 +14,14 @@ import Page3 from "./page1/page3.jsx";
 import Page4 from "./page1/page4.jsx";
 import "./assets/css/page4.css";
 import "./assets/css/page5.css"
+import "./assets/css/register.css";
 import Page5 from "./page1/page5.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Signin from "./files/signin.jsx";
 import"./assets/css/signin.css";
+import Register from "./files/register.jsx";
+import Dailydeals from "./files/dailydeals.jsx";
+import"./assets/css/dailydeals.css";
 function App() {
   return (
     <>
@@ -25,6 +29,8 @@ function App() {
     <Routes>
     <Route path="/" element={<Front />} />
     <Route path="/signin" element={<Signin />} />
+    <Route path="/register" element={<Register />} />
+    <Route path="/dailydeals" element={<Dailydeals />} />
       </Routes>
     </BrowserRouter>
     </>

@@ -1,22 +1,86 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaRegBell } from "react-icons/fa";
 import { LuShoppingCart } from "react-icons/lu";
-import Signin from "../files/signin";
-import Navbar2 from "./navbar2";
-import Navbar3 from "./navbar3";
-import UncontrolledExample from "./carousel";
-import Roundbuttons from "./roundbuttons";
-import Page3 from "./page3";
-import Page4 from "./page4";
-import Page5 from "./page5";
+import images from "../pics/images.png";
+import Dropdown from "./dropdown";
+import SearchBar from "../page1/searchbar";
+import { Line } from 'react-chartjs-2';
+import { Chart as ChartJS, LineElement, PointElement, CategoryScale, LinearScale, Title, Tooltip, Legend } from 'chart.js';
 
+// Register all necessary elements with Chart.js
+ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Title, Tooltip, Legend);
 
-const Front = () => {
+const Dailydeals = () => {
+  const data = {
+    labels: [
+      'January', 'February', 'March', 'April', 'May', 'June', 
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ],
+    datasets: [
+      {
+        label: 'Profit',
+        data: [12, 19, 10, 15, 8, 13, 17, 9, 14, 10, 18, 11],
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 2,
+        pointRadius: 0, // Removes dots on the line
+        tension: 0 // Makes the line straight
+      },
+      {
+        label: 'Revenue',
+        data: [22, 29, 25, 30, 28, 33, 35, 27, 29, 32, 30, 35],
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 2,
+        pointRadius: 0, // Removes dots on the line
+        tension: 0 // Makes the line straight
+      },
+      {
+        label: 'Investment',
+        data: [10, 15, 13, 12, 11, 14, 12, 16, 15, 14, 13, 15],
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 2,
+        pointRadius: 0, // Removes dots on the line
+        tension: 0 // Makes the line straight
+      }
+    ]
+  };
+
+  // Configuration options
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true,
+        position: 'bottom', // Positions the legend at the bottom
+      }
+    },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Months'
+        },
+        ticks: {
+          autoSkip: true,
+          maxTicksLimit: 12
+        }
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Values'
+        },
+        grid: {
+          display: true,
+        },
+      }
+    }
+  };
   return (
     <div>
-    <div className="navbar1">
+        <div>
+        <div className="navbar1">
       <div className="navbar1div">
         <div className="navbar1div1">
           <div> Hi!</div>
@@ -105,15 +169,12 @@ const Front = () => {
       </div>
       
     </div>
-    <Navbar2/>
-    <Navbar3/>
-    <UncontrolledExample/>
-    <Roundbuttons/>
-    <Page3/>
-    <Page4/>
-    <Page5/>
+        </div>
+        <div style={{display:'flex',justifyContent:'center'}} >
+        <Line style={{padding:'20px'}} data={data} options={options} />
+        </div>
     </div>
-  );
-};
+  )
+}
 
-export default Front;
+export default Dailydeals;
